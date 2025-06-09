@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                     <div class="div-hide-password-login-form" id="togglePassword">
                                         <span class="fas fa-eye-slash input-group-text input-group-text-icon bg-transparent border-0" id="eyeIcon"></span>
                                     </div>
-                                    <input type="password" class="form-control form-control-lg" name="password" id="typePasswordX-2" placeholder="password" value="<?php echo isset($_POST['password']) ? htmlspecialchars($_POST['password']) : ''; ?>">
+                                    <input type="password" class="form-control form-control-lg" name="password" id="typePasswordX-2" placeholder="اكتب كلمه السر هنا" value="<?php echo isset($_POST['password']) ? htmlspecialchars($_POST['password']) : ''; ?>">
 
                                 </div>
                             </div>
