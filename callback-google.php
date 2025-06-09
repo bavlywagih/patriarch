@@ -7,7 +7,6 @@ session_start();
 $client_id = $client_id_config;
 $client_secret = $client_secret_confige;
 $redirect_uri = $redirect_uri_confige;
-echo $redirect_uri;
 
 if (isset($_GET['code'])) {
     $code = $_GET['code'];
