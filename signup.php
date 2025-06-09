@@ -3,6 +3,10 @@ session_start();
 
 include_once  "includes/layouts/header.php";
 include_once  "connect.php";
+if (isset($_SESSION['user_id'])) {
+    header("Location: index.php");
+    exit;
+}
 
 $error = '';
 
@@ -25,6 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             // تخزين بيانات الجلسة
             $_SESSION["user_id"] = $con->lastInsertId();
             $_SESSION["name"] = $name;
+            $_SESSION["fullname"] = null;
 
             // إعادة التوجيه للصفحة الرئيسية
             header("Location: index.php");

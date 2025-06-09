@@ -62,6 +62,20 @@ $activeSignup = $filename ===  "signup.php";
             </form>
 
             <i class="fa-solid fa-moon p-2" id="theme-toggle" style="cursor: pointer;"></i>
+            <?php if (isset($_SESSION['user_id'])) { ?>
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle drop-tran-backcolor-border-0-lightm-c-balck" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <?php echo $_SESSION['name'] ?>
+                    </a>
+
+                    <ul class="dropdown-menu drop-nav-name">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="logout.php">تسجيل خروج</a></li>
+                    </ul>
+                </div>
+            <?php } ?>
+
         </div>
     </div>
 </nav>

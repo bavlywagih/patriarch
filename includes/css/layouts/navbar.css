@@ -86,3 +86,24 @@ nav ul li a.active {
         margin: 10px 0;
     }
 }
+
+.drop-nav-name{
+    right: -39px !important ;
+}
+
+@media (max-width: 768px) {
+    .drop-nav-name {
+        right: -1px !important;   
+    }
+}
+
+.drop-tran-backcolor-border-0-lightm-c-balck{
+    background-color: transparent;
+    border: transparent;
+}
+
+[data-bs-theme="light"] {
+    .drop-tran-backcolor-border-0-lightm-c-balck{
+        color: black;
+    }
+}

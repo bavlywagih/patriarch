@@ -4,6 +4,11 @@ session_start();
 include_once  "includes/layouts/header.php";
 include_once  "connect.php";
 
+if (isset($_SESSION['user_id'])) {
+    header("Location: index.php");
+    exit;
+}
+
 $error = '';
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $email = trim($_POST["email"]);
@@ -21,6 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             if (password_verify($password, $user['password'])) {
                 $_SESSION["user_id"] = $user["id"];
                 $_SESSION["name"] = $user["name"];
+                $_SESSION["fullname"] = null;
                 header("Location: index.php");
                 exit;
             } else {
