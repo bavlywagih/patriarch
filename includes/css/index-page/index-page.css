@@ -1,0 +1,33 @@
+#carouselExampleAutoplaying {
+    height: 94vh;
+        overflow: hidden;
+}
+
+#carouselExampleAutoplaying .carousel-inner img {
+    height: 94vh;
+    object-fit: cover;
+    width: 100%;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* خلفية شفافة سوداء */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    /* ظل خفيف حول الصندوق */
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    /* ظل للنص نفسه */
+}
+
+/* @media (max-width: 768px) {
+    .carousel-inner img {
+        object-position: right top;
+        
+    }
+}
+ */
