@@ -1,7 +1,7 @@
 <?php
 session_start();
-include "connect.php";
-include "includes/layouts/header.php";
+include_once  "connect.php";
+include_once  "includes/layouts/header.php";
 ?>
 
 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -45,5 +45,5 @@ include "includes/layouts/header.php";
 
 
 <?php
-include "includes/layouts/footer.php";
+include_once "includes/layouts/footer.php";
 ?>

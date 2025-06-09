@@ -1,4 +1,4 @@
-<?php include "../../includes/layouts/header.php"; ?>
+<?php include_once  "../../includes/layouts/header.php"; ?>
 
 <form id="loginForm" name="loginForm">
     <div class="container py-5 h-100">
@@ -30,4 +30,4 @@
         </div>
     </div>
 </form>
-<?php include "../../includes/layouts/footer.php"; ?>
+<?php include_once  "../../includes/layouts/footer.php"; ?>

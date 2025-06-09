@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-include "includes/layouts/header.php";
-include "connect.php";
+include_once  "includes/layouts/header.php";
+include_once  "connect.php";
 
 $error = '';
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -108,4 +108,4 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </script>
 
 
-<?php include "includes/layouts/footer.php"; ?>
+<?php include_once  "includes/layouts/footer.php"; ?>

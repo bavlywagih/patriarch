@@ -45,8 +45,8 @@
 
 
 <?php
-include "includes/layouts/header.php";
-include "connect.php";
+include_once  "includes/layouts/header.php";
+include_once  "connect.php";
 
 $email = "";
 $password = "";
@@ -150,4 +150,4 @@ if (isset($_GET['error'])) {
     });
 </script>
 
-<?php include "includes/layouts/footer.php"; ?>
+<?php include_once  "includes/layouts/footer.php"; ?>

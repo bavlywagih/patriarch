@@ -1,10 +1,13 @@
 <?php
-include "connect.php";
+include_once "connect.php";
+include_once  'config.php';
+
 session_start();
 
-$client_id = '320032618440-4eppq4g8fc1cpgesilnspg9ggll0e3mu.apps.googleusercontent.com';
-$client_secret = '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';
-$redirect_uri = 'http://localhost:8080/patriarch/callback-google.php';
+$client_id = $client_id_config;
+$client_secret = $client_secret_confige;
+$redirect_uri = $redirect_uri_confige;
+echo $redirect_uri;
 
 if (isset($_GET['code'])) {
     $code = $_GET['code'];
