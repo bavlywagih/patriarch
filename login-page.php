@@ -23,14 +23,19 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
         if ($user) {
-            if (password_verify($password, $user['password'])) {
-                $_SESSION["user_id"] = $user["id"];
-                $_SESSION["name"] = $user["name"];
-                $_SESSION["fullname"] = null;
-                header("Location: index.php");
+            if ($user["auth_provider"] == "google") {
+                header("Location: login-google.php");
                 exit;
             } else {
-                $error = "كلمة المرور غير صحيحة.";
+                if (password_verify($password, $user['password'])) {
+                    $_SESSION["user_id"] = $user["id"];
+                    $_SESSION["name"] = $user["name"];
+                    $_SESSION["fullname"] = null;
+                    header("Location: index.php");
+                    exit;
+                } else {
+                    $error = "كلمة المرور غير صحيحة.";
+                }
             }
         } else {
             $error = "البريد الإلكتروني غير موجود.";
@@ -75,6 +80,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 
                         <button class="btn btn-primary btn-lg w-100 btn-block" type="submit">تسجيل الدخول</button>
+                        <p><a href="forgot_password.php">نسيت كلمة المرور؟</a></p>
 
                         <hr class="my-4">
 

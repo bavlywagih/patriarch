@@ -2,6 +2,7 @@
 session_start();
 include_once  "connect.php";
 include_once  "includes/layouts/header.php";
+
 ?>
 
 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">

@@ -151,3 +151,60 @@ if (isset($_GET['error'])) {
 </script>
 
 <?php include_once  "includes/layouts/footer.php"; ?>
+
+
+
+ الخطوات الكاملة لتفعيل mail() في XAMPP باستخدام Gmail SMTP:
+🔧 1. افتح ملف إعدادات PHP
+افتح هذا الملف:
+
+makefile
+Copy
+Edit
+C:\xampp\php\php.ini
+وابحث عن هذا السطر:
+
+ini
+Copy
+Edit
+;sendmail_path =
+واستبدله بـ:
+
+ini
+Copy
+Edit
+sendmail_path = "\"C:\xampp\sendmail\sendmail.exe\" -t"
+🔧 2. إعداد sendmail
+افتح هذا الملف:
+
+makefile
+Copy
+Edit
+C:\xampp\sendmail\sendmail.ini
+ثم عدّل الإعدادات التالية:
+
+ini
+Copy
+Edit
+smtp_server=smtp.gmail.com
+smtp_port=587
+smtp_ssl=tls
+
+auth_username=your-email@gmail.com
+auth_password=your-app-password
+❗ مهم: يجب استخدام "App Password" من إعدادات Gmail، وليس كلمة المرور العادية.
+اتبع الخطوات هنا: https://myaccount.google.com/apppasswords
+
+🔧 3. فعّل الامتداد openssl في php.ini
+افتح php.ini مرة أخرى وابحث عن:
+
+ini
+Copy
+Edit
+;extension=openssl
+واحذف الـ ; لتصبح:
+
+ini
+Copy
+Edit
+extension=openssl
