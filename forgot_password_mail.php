@@ -29,7 +29,7 @@ if (isset($_POST['email'])) {
         $stmt->execute([$token, $expires, $email]);
 
         // تحضير الرابط
-        $reset_link = "http://localhost:8080/patriarch/reset_password.php?token=$token";
+        $reset_link = "http://localhost:8080/patriarch/reset_password_mail.php?token=$token";
 
         // إعدادات البريد
         $subject = "🔐 طلب إعادة تعيين كلمة المرور";

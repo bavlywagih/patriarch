@@ -80,7 +80,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 
                         <button class="btn btn-primary btn-lg w-100 btn-block" type="submit">تسجيل الدخول</button>
-                        <p><a href="forgot_password.php">نسيت كلمة المرور؟</a></p>
+                        <p><a href="forgot_password_mail.php">نسيت كلمة المرور؟</a></p>
 
                         <hr class="my-4">
 
