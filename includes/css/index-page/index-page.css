@@ -24,6 +24,29 @@
     /* ظل للنص نفسه */
 }
 
+
+@media (max-width: 811px) {
+    .carousel-image-mobile {
+    display: none !important;
+}
+.carousel-image-desktop {
+    display: block !important;
+  }
+}
+
+/* الصورة للديسكتوب: تظهر فقط على الشاشات الأكبر من 485px */
+@media (min-width: 811px) {
+    .carousel-image-mobile {
+        display: block !important;
+    }
+    .carousel-image-desktop {
+    display: none !important;
+  }
+}
+
+
+
+
 /* @media (max-width: 768px) {
     .carousel-inner img {
         object-position: right top;

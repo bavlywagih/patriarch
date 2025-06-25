@@ -36,7 +36,7 @@ $activeSignup = $filename ===  "signup.php";
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-        <a class="navbar-brand" href="">الاباء البطاركه</a>
+        <a class="navbar-brand" href="/patriarch/index.php">الاباء البطاركه</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -69,8 +69,7 @@ $activeSignup = $filename ===  "signup.php";
                     </a>
 
                     <ul class="dropdown-menu drop-nav-name">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="profile.php">الصفحة الشخصية</a></li>
                         <li><a class="dropdown-item" href="logout.php">تسجيل خروج</a></li>
                     </ul>
                 </div>

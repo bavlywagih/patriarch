@@ -1,7 +1,7 @@
 <?php
 
-$client_id_config = '320032618440-4eppq4g8fc1cpgesilnspg9ggll0e3mu.apps.googleusercontent.com';
-$client_secret_confige = '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';
+$client_id_config = '558929452136-8oqumc5871n4n9n627s9ig8hci4ucf5h.apps.googleusercontent.com';
+$client_secret_confige = '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';
 $redirect_uri_confige = 'http://localhost:8080/patriarch/callback-google.php';
 
 

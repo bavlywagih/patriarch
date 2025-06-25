@@ -1,0 +1,9 @@
+.form-control-align-end-placeholder::placeholder {
+  text-align: end;
+}
+.form-control-align-end {
+  text-align: end !important;
+}
+.form-control-align-start {
+  text-align: start !important;
+}

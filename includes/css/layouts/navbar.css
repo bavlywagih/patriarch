@@ -34,13 +34,13 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 20px;
+    /* margin-right: 20px; */
     list-style: none;
 }
 
-nav ul li:last-child {
+/* nav ul li:last-child {
     margin-right: 0;
-}
+} */
 
 nav ul li a {
     font-weight: 600;

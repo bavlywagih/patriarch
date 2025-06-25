@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="/patriarch/includes/css/bootstrap.rtl.min.css">
         <link rel="stylesheet" href="/patriarch/includes/css/index-page/index-page.css">
         <link rel="stylesheet" href="/patriarch/includes/css/login-page/login-page.css">
+        <link rel="stylesheet" href="/patriarch/includes/css/profile-page/profile-page.css">
         <link rel="stylesheet" href="/patriarch/includes/css/all.min.css">
         <link rel="stylesheet" href="/patriarch/includes/css/layouts/navbar.css">
         <title><?php echo $pageTitle ?? 'الاباء البطاركة'; ?></title>

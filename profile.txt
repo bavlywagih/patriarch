@@ -1,0 +1,22 @@
+            <?php if (!isset($_GET['id'])) { ?>
+                <div class="col-xl-4">
+                    <form id="uploadForm" class="card-body text-center">
+                        <div class="position-relative">
+                            <a href="gallery-profile.php">
+                                <img id="profileImage" class="img-account-profile rounded mb-2 text-black" 
+                                     src="<?php echo isset($result->image_path) ? htmlspecialchars($result->image_path) : 'media/profile/user-profile.png'; ?>" 
+                                     alt="Profile Image">
+                            </a>
+
+                            <!-- Spinner -->
+                            <div id="spinner" class="spinner-grow position-absolute top-50 start-50 translate-middle" 
+                                 role="status" style="display: none;">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+
+                        <input type="file" id="profileImagesInput" name="profile_images[]" accept="image/*" required class="form-control mb-2" multiple>
+                        <div class="small font-italic text-muted mb-4">JPG أو PNG بحجم لا يتجاوز 10 ميجابايت</div>
+                    </form>
+                </div>
+            <?php } ?>

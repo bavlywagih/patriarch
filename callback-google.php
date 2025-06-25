@@ -54,17 +54,18 @@ if (isset($_GET['code'])) {
             $_SESSION['user_id'] = $user['id'];
             $_SESSION['name'] = $user['name'];
             $_SESSION['group_id'] = $user['group_id'];
+            $_SESSION['auth_provider'] = 'google';
             // echo "تسجيل دخول ناجح. مرحباً " . htmlspecialchars($user['name']);
             header("Location: /patriarch/index.php");
             exit;
         } else {
-            $insert = $pdo->prepare("INSERT INTO users (name, email, password, auth_provider, group_id) VALUES (:name, :email, :password, :provider, :group_id)");
+            $insert = $pdo->prepare("INSERT INTO users (name, email, password, auth_provider, group_id) VALUES (:name, :email, :password, :auth_provider, :group_id)");
             $result = $insert->execute([
                 'name' => $name,
                 'email' => $email,
                 'password' => null,
                 'group_id' => 0,
-                'provider' => 'google'
+                'auth_provider' => 'google'
             ]);
 
             if ($result) {
@@ -73,6 +74,7 @@ if (isset($_GET['code'])) {
                 $_SESSION['fullname'] = $name;
                 $_SESSION['email'] = $email;
                 $_SESSION['group_id'] = $group_id;
+                $_SESSION['auth_provider'] = 'google';
                 // echo "تم إنشاء الحساب بنجاح. مرحباً " . htmlspecialchars($name);
                 header("Location: /patriarch/index.php");
                 exit;

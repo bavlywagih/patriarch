@@ -13,7 +13,9 @@ include_once  "includes/layouts/header.php";
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="5000">
-            <img src="includes/photos/pngtree-jesus-standing-on-top-of-a-cloud-with-the-sun-shining-image_2902589.jpg" class="d-block w-100" alt="...">
+            <img src="includes/photos/patriarch1HomePage.jpg" class="d-none d-md-block w-100" alt="Desktop Image">
+            <!-- صورة للموبايل -->
+            <img src="includes/photos/patriarch1HomePageMob.jpg" class="d-block d-md-none w-100" alt="Mobile Image">
             <div class="carousel-caption d-block text-white bg-dark bg-opacity-50 rounded p-2">
                 <h5>First slide label</h5>
                 <p>Some representative placeholder content for the first slide.</p>
@@ -23,7 +25,7 @@ include_once  "includes/layouts/header.php";
             <img src="includes/photos/—Pngtree—jesus standing on the mountain_3170007.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-block text-white bg-dark bg-opacity-50 rounded p-2">
                 <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
+                <p>Some reprشesentative placeholder content for the second slide.</p>
             </div>
         </div>
         <div class="carousel-item" data-bs-interval="5000">
